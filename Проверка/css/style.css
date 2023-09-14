@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Gotham Pro Regular";
+  src: url(/fonts/GothamPro.woff2) format("woff2"),
+    url(/fonts/GothamPro.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url(/fonts/GothamPro-Bold.woff2) format("woff2"),
+    url(/fonts/GothamPro-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url(/fonts/GothamPro-Medium.woff2) format('woff2'),
+        url(/fonts/GothamPro-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url(/fonts/Roboto-Light.woff2) format("woff2"),
+    url(/fonts/Roboto-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(/fonts/Roboto-Bold.woff2) format("woff2"),
+    url(/fonts/Roboto-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(/fonts/Roboto-Regular.woff2) format("woff2"),
+    url(/fonts/Roboto-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --accent-color: #3b1d8f;
+  --text-color: #000000;
+  --light-text-color: #404040;
+  --btn-color: #273895;
+  --title-color: #303030;
+  --grey-text-color: #7a7a7a;
+  --white-text: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  background-color:  #F4F7FA;
+}
+
+body {
+  font-family: "Gotham Pro Regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-reset {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+    border: none;
+  border-radius: 15px;
+  background: var(--btn-color);
+  color: var(--white-text);
+  text-align: center;
+  font-family: "Gotham Pro Bold";
+  font-size: 1rem;
+  line-height: 112.5%;
+}
+
+header {
+  padding: 48px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  max-width: 199px;
+}
+
+.header_logo h3 {
+  margin-left: 22px;
+  max-width: 88px;
+
+  font-family: "Roboto Light";
+  font-size: 1rem;
+  color: var(--accent-color);
+}
+
+.header_text {
+  color: var(--title-color);
+  font-family: "Gotham Pro Regular";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 166.667%;
+  max-width: 227px;
+  margin-left: 64px;
+}
+
+.contacts {
+  color: var(--title-color);
+  text-align: right;
+  font-family: "Gotham Pro Bold";
+  font-size: 1rem;
+  line-height: 112.5%;
+  margin-right: 36px;
+}
+
+.input {
+  padding: 16px 32px;
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 642px;
+  margin-top: 48px;
+}
+
+.menu li a {
+  color: var(--text-color);
+  font-family: 'Gotham Pro Medium';
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.48px;
+}
