@@ -188,6 +188,11 @@ header div {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.48px;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+  color: var(--btn-color);
 }
 
 .start-section {
@@ -633,4 +638,209 @@ h1 {
 .buf-card_text {
   font-size: 0.875rem;
   line-height: 150%;
+}
+
+.tarif {
+  padding: 0 189px 144px 189px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarif_title {
+  font-size: 2rem;
+  line-height: 137.5%;
+  margin: 0;
+}
+
+.tarif_subtitle {
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+.tarif_btn {
+  text-align: center;
+  font-family: "Gotham Pro Medium";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 10px 28px;
+}
+
+.tarif-btn_pass {
+  color: var(--btn-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px dashed transparent;
+  padding: 0;
+  margin: 0 64px;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.tarif-btn_pass:hover{
+  border-bottom: 2px dashed var(--btn-color);
+  cursor: pointer;
+}
+
+.tarif-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tarif-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 513px;
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 48px;
+  margin-top: 32px;
+}
+
+.tarif-card:nth-child(2n) {
+  margin-right: 33px;
+}
+
+.tarif-card:first-child {
+  max-width: 1062px;
+  width: 100%;
+  align-items: center;
+  padding: 48px 187px 48px 219px;
+}
+
+.tarif-card_title {
+  color: var(--btn-color);
+  font-family: "Gotham Pro Bold";
+  font-size: 1rem;
+  line-height: 187.5%;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tarif-card_free {
+  color: #c9c9c9;
+  font-family: "Gotham Pro Medium";
+  font-size: 2rem;
+  line-height: 137.5%;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.tarif-card_subtitle {
+  color: #737373;
+  font-family: "Gotham Pro Regular";
+  font-size: 0.875rem;
+  line-height: 214.286%;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.tarif-card_price {
+  color: var(--light-text-color);
+  font-family: "Gotham Pro Bold";
+  font-size: 1rem;
+  line-height: 187.5%;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.tarif-card_available {
+  color: var(--light-text-color);
+  font-family: "Gotham Pro Medium";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 187.5%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.tarif-card_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarif-card_list li {
+  display: flex;
+  align-items: baseline;
+}
+
+.tarif-card_list li p {
+  color: var(--light-text-color);
+  font-family: "Gotham Pro Regular";
+  font-size: 1rem;
+}
+
+.tarif-card_list .li-point {
+  border-bottom: 7px solid #2840cd;
+  border-left: 7px solid transparent;
+  margin-right: 8px;
+}
+
+.tarif-card:first-child .tarif-card_list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0 24px;
+}
+
+.tarif-card_more {
+  display: flex;
+  /* align-items: center; */
+  color: var(--btn-color);
+  font-family: "Gotham Pro Medium";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 250%;
+}
+
+.arrow {
+  cursor: pointer;
+  position: relative;
+  width: 14.8px;
+  height: 16px;
+  margin-left: 16px;
+}
+.arrow span {
+  position: relative;
+  top: 20px;
+  width: 14.8px;
+  height: 2px;
+  background-color: var(--btn-color);
+  left: 0;
+  display: block;
+}
+.arrow span::after {
+  content: "";
+  position: absolute;
+  width: 10.2px;
+  height: 2px;
+  top: -3px;
+  right: -3px;
+  background-color: var(--btn-color);
+  transform: rotate(45deg);
+}
+.arrow span::before {
+  content: "";
+  position: absolute;
+  width: 10.2px;
+  height: 2px;
+  top: 3px;
+  right: -3px;
+  background-color: var(--btn-color);
+  transform: rotate(-45deg);
+}
+
+.tarif-card_btn {
+  color: var(--white-text);
+  text-align: center;
+  font-family: "Gotham Pro Medium";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 112.5%;
+  padding: 18px 40px;
+  max-width: 221px;
+  margin-top: 16px;
 }
