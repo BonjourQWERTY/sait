@@ -677,7 +677,7 @@ h1 {
   transition: border-bottom 0.3s ease-in-out;
 }
 
-.tarif-btn_pass:hover{
+.tarif-btn_pass:hover {
   border-bottom: 2px dashed var(--btn-color);
   cursor: pointer;
 }
@@ -843,4 +843,30 @@ h1 {
   padding: 18px 40px;
   max-width: 221px;
   margin-top: 16px;
+}
+
+.partner {
+  padding: 88px 0 205px 196px;
+  background-color: var(--btn-color);
+  background-image: url(/img/partner_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.partner_title {
+  color: var(--white-text);
+  font-family: "Gotham Pro Bold";
+  font-size: 2rem;
+  line-height: 137.5%;
+}
+
+.partner_text {
+  color: #E9E9E9;
+  /* font-family: "Gotham Pro Regular"; */
+  font-family: "Gotham Pro Medium";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  max-width: 321px;
 }
