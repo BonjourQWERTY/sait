@@ -862,11 +862,98 @@ h1 {
 }
 
 .partner_text {
-  color: #E9E9E9;
+  color: #e9e9e9;
   /* font-family: "Gotham Pro Regular"; */
   font-family: "Gotham Pro Medium";
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
   max-width: 321px;
+}
+
+.bio {
+  margin: 144px 267px 144px 189px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/img/bio_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bio-inf {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bio-inf div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 769px;
+}
+
+.bio-inf div p,
+.bio-inf div ul {
+  max-width: 469px;
+}
+
+.bio-inf div p,
+.bio-inf div ul li {
+  font-family: "Gotham Pro Regular";
+  font-size: 0.875rem;
+  line-height: 142.857%;
+  margin: 0;
+  /* padding-left: 0; */
+}
+
+.bio-inf_title {
+  font-family: "Gotham Pro Bold";
+  margin: 0;
+}
+
+.bio-inf div p:nth-child(3) {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-family: "Gotham Pro Medium";
+}
+
+.bio-inf_btn {
+  font-family: "Gotham Pro Medium";
+  font-weight: 400;
+  line-height: 112.5%;
+  margin-top: 32px;
+  padding: 20px 39px;
+}
+
+.bio-comm {
+  display: flex;
+  padding-left: 187px;
+  margin-top: 40px;
+}
+.bio-comm div {
+  border-radius: 11.936px;
+  background: linear-gradient(331deg, #f0ebff -4.05%, #fff 34.42%);
+  box-shadow: 0px 13.52766px 39.78723px 0px rgba(187, 166, 255, 0.2);
+  max-width: 360px;
+  width: 100%;
+  padding: 32px;
+}
+.bio-comm div p {
+  color: var(--title-color);
+  font-weight: 400;
+  margin: 0;
+}
+
+.bio-comm div p:first-child {
+  font-family: "Gotham Pro Medium";
+  font-size: 2rem;
+  line-height: 49.734%;
+}
+
+.bio-comm div p:last-child {
+  font-family: "Gotham Pro Regular";
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 132.624%;
 }
