@@ -106,12 +106,20 @@ p {
 .btn {
   border: none;
   border-radius: 15px;
-  background: var(--btn-color);
+  background-color: var(--btn-color);
   color: var(--white-text);
   text-align: center;
   font-family: "Gotham Pro Bold";
   font-size: 1rem;
   line-height: 112.5%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  background-color: var(--accent-color);
+
 }
 
 .h2 {
@@ -956,4 +964,66 @@ h1 {
   font-size: 0.75rem;
   font-style: italic;
   line-height: 132.624%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  border-top: #dee6ef solid 1px;
+}
+
+.footer-row:first-child {
+  padding: 32px 110px 32px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-row:first-child div {
+  display: flex;
+}
+
+.footer_text {
+  margin-left: 48px;
+}
+
+.footer_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_icon {
+  padding: 9px;
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 10px;
+  border: 1px solid #cfdae7;
+  margin-left: 8px;
+}
+
+.footer_icon:hover {
+  cursor: pointer;
+}
+
+.footer-row:last-child {
+  padding: 16px 111px 16px 79px;
+  background: #e8edf3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-row:last-child div p,
+.footer-row:last-child div a {
+  color: var(--grey-text-color);
+  font-family: "Gotham Pro Regular";
+  font-size: 0.75rem;
+  line-height: 166.667%;
+}
+
+.footer-row:last-child div a {
+  margin-left: 16px;
+}
+
+.footer-row:last-child div a:hover {
+  cursor: pointer;
 }
