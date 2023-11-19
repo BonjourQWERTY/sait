@@ -53,11 +53,11 @@
 }
 
 :root {
-  --accent-color: #3b1d8f;
+  --accent-color: #0095DA;
   --text-color: #000000;
   --light-text-color: #404040;
-  --btn-color: #273895;
-  --title-color: #303030;
+  --btn-color: #111a26;
+  --title-color: #111a26;
   --grey-text-color: #7a7a7a;
   --white-text: #ffffff;
 }
@@ -75,7 +75,6 @@ html {
 
 body {
   font-family: "Gotham Pro Regular";
-  background: url(/img/top_bg.svg);
   background-repeat: no-repeat;
 }
 
@@ -154,19 +153,19 @@ header div {
   margin-left: 22px;
   max-width: 88px;
 
-  font-family: "Roboto Light";
-  font-size: 1rem;
+  font-family: "Gotham Pro Bold";
+  font-size: 1.25rem;
   color: var(--accent-color);
 }
 
 .header_text {
   color: var(--title-color);
   font-family: "Gotham Pro Regular";
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 166.667%;
   max-width: 227px;
-  margin-left: 64px;
+  margin-right: 36px;
 }
 
 .contacts {
@@ -190,6 +189,11 @@ header div {
   margin-top: 48px;
 }
 
+.menu li{
+  max-width: 120px;
+  text-align: center;
+}
+
 .menu li a {
   color: var(--text-color);
   font-family: "Gotham Pro Medium";
@@ -200,7 +204,7 @@ header div {
 }
 
 .menu li a:hover {
-  color: var(--btn-color);
+  color: var(--accent-color);
 }
 
 .start-section {
@@ -208,6 +212,8 @@ header div {
   background: url(/img/start_bg.png);
   background-position: top right;
   background-repeat: no-repeat;
+  background-size: contain;
+  padding:  20px 0 150px 0;
 }
 
 .start-menu {
@@ -222,7 +228,7 @@ h1 {
   font-family: "Gotham Pro Bold";
   font-size: 3rem;
   line-height: 114.583%;
-  max-width: 733px;
+  max-width: 800px;
   margin: 0;
 }
 
@@ -374,7 +380,7 @@ h1 {
 }
 
 .ab-card_title {
-  color: #7247ff;
+  color: var(--accent-color);
   font-family: "Gotham Pro Bold";
   margin: 0;
 }
